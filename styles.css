@@ -1,0 +1,420 @@
+:root {
+  --color: hsl(243, 87%, 12%);
+  --color: hsl(238, 22%, 44%);
+  --color: hsl(224, 93%, 58%);
+  --color: hsl(170, 45%, 43%);
+  --color: hsl(240, 75%, 98%);
+  --color: hsl(0, 0%, 75%);
+}
+.fonts {
+  font-family: "Raleway", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 450px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+a {
+  text-decoration: none;
+}
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container img {
+  width: 150px;
+}
+header .container .nav span {
+  margin-left: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: hsl(243, 87%, 12%);
+}
+@media (max-width: 450px) {
+  header .container img {
+    width: 100px;
+  }
+  header .container .nav span {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
+main .container .files-content,
+main .stay-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+main .container .files h2,
+main .stay h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.4;
+  color: hsl(243, 87%, 12%);
+}
+main .container .files p,
+main .container .stay > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(243, 87%, 12%);
+}
+main .container .files form {
+  position: relative;
+}
+main .container .files form:active::before {
+  content: "Please check your email";
+  font-size: 12px;
+  color: hsl(238, 22%, 44%);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+main .container .files form #mail {
+  width: 270px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  position: relative;
+}
+main .container .files form #mail::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+main .container .files form #mail:focus {
+  border: 1px solid hsl(238, 22%, 44%);
+}
+main .container .files form #button {
+  height: 40px;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  cursor: pointer;
+}
+main .container .files form #button:active {
+  background-color: hsl(224, 93%, 70%);
+}
+main .container .files-image {
+  width: 50%;
+}
+main .container.stay-content {
+  padding-top: 100px;
+  background-color: hsl(240, 75%, 98%);
+  position: relative;
+}
+main .container.stay-content::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-image: url(./bg-curve-mobile.svg);
+  background-size: cover;
+  position: absolute;
+  top: -99px;
+  left: 0;
+}
+main .stay {
+  position: relative;
+}
+main .stay h2 {
+  font-size: 39px;
+}
+main .stay > p {
+  width: 520px;
+}
+main .stay .link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(170, 45%, 43%);
+  position: relative;
+}
+main .stay .link::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: hsl(170, 45%, 43%);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+main .stay .link:active::before {
+  background-color: hsl(170, 45%, 70%);
+}
+main .stay .link:active {
+  color: hsl(170, 45%, 70%);
+}
+main .stay .link i {
+  font-size: 14px;
+  margin-left: 10px;
+}
+main .stay .quote {
+  width: 350px;
+  margin-top: 60px;
+  padding: 30px;
+  box-shadow: 0px 0px 20px hsl(0, 0%, 75%);
+  background-color: white;
+  border-radius: 5px;
+}
+main .stay .quote i {
+  font-size: 20px;
+}
+main .stay .quote p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+main .stay .ceo {
+  display: flex;
+  align-items: center;
+}
+main .stay .ceo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+main .stay .ceo h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: hsl(243, 87%, 12%);
+}
+main .stay .ceo span {
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243, 87%, 12%);
+  font-size: 10px;
+}
+main .stay-image {
+  width: 40%;
+}
+@media (max-width: 450px) {
+  main .files-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  main .stay-content {
+    flex-direction: column-reverse;
+  }
+  main .container .files h2 {
+    font-size: 25px;
+  }
+  main .stay h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  main .container .files p {
+    font-size: 15px;
+  }
+  main .stay p {
+    font-size: 14px;
+    text-align: left;
+  }
+  main .stay p {
+    width: 100%;
+  }
+  main .stay .link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  main .container .files-image,
+  main .stay-image {
+    width: 100%;
+  }
+  main .container .files form #mail {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  main .container .files form #button {
+    width: 100%;
+  }
+}
+main .submit {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: hsl(238, 22%, 30%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+main .submit .side {
+  width: 500px;
+}
+main .submit .side h2 {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+}
+main .submit .side p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+main .submit form {
+  width: 40%;
+  position: relative;
+}
+main .submit form:active::before {
+  content: "Please check your email";
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  color: whitesmoke;
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+}
+main .submit form .submit-mail {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+main .submit form .submit-mail::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+main .submit form .button {
+  width: 50%;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: hsl(224, 93%, 45%);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px hsl(238, 22%, 30%);
+}
+main .submit form .button:active {
+  background-color: hsl(224, 93%, 70%);
+}
+@media (max-width: 450px) {
+  main .submit {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .submit .side h2 {
+    font-size: 22px;
+  }
+  main .submit .side,
+  main .submit form {
+    width: 100%;
+  }
+  main .submit form .submit-mail,
+  main .submit form .button {
+    width: 90%;
+  }
+}
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:hsl(243, 87%, 12%);
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+footer .info img {
+  margin-bottom: 30px;
+}
+footer .info p {
+  margin: 20px 0 20px 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: whitesmoke;
+  position: relative;
+}
+footer .info p::before,
+footer .info p::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+footer .info .phone::before {
+  background-image: url(./icon-phone.svg);
+}
+footer .info .mail::before {
+  background-image: url(./icon-email.svg);
+}
+footer .links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+footer .links a {
+  display: block;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: whitesmoke;
+}
+footer .links a:active {
+  color:hsl(224, 93%, 70%)
+}
+footer .social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .social i {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  cursor: pointer;
+}
+footer .social i:active {
+  color: hsl(224, 93%, 70%);
+  border-color: hsl(224, 93%, 70%);
+}
+@media (max-width: 450px) {
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
